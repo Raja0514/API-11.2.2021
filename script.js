@@ -1,7 +1,7 @@
 
  function onClick(){
 
-    let response=fetch("http://www.boredapi.com/api/activity/")
+    let response=fetch("http://www.boredapi.com/api/activity")
 
     .then(response=>{
 
