@@ -1,10 +1,7 @@
 
-const para=document.querySelector('.paragraph');
+ function onClick(){
 
-
-async function onClick(){
-
-    let response=await fetch("http://www.boredapi.com/api/activity/")
+    let response=fetch("http://www.boredapi.com/api/activity/")
 
     .then(response=>{
 
@@ -20,19 +17,12 @@ async function onClick(){
         })
 
         .catch(error=>{
-            console.log('error');
-            console.error(error);
-
+           
             document.write(error);
         })
         
         
     
 
-    // let data= await response.json();
-
-    
-
-    // para.textContent=data.activity;
-}
+    }
     
